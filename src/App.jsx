@@ -5,7 +5,7 @@ function App() {
     <div className="p-4">
       <h1 className="text-2xl font-bold text-green-200">States</h1>
       <div className="flex flex-col gap-4 w-full max-w-md mx-auto">
-        {/* <SampleComponentString /> */}
+        <SampleComponentString />
         <SampleComponentObj />
         {/* <FilterWrapper /> */}
       </div>
@@ -46,7 +46,7 @@ function SetUserButtonString({ handleChangeUser }) {
         type="text"
         value={user}
         onChange={(e) => setUser(e.target.value)}
-        className="text-black"
+        className="text-black bg-white"
       />
       <button
         className="bg-green-400 text-black hover:bg-green-500"
@@ -93,7 +93,7 @@ function SetUserButton({ handleChangeUser }) {
         type="text"
         value={user.name}
         onChange={(e) => setUser({ name: e.target.value })}
-        className="text-black"
+        className="text-black bg-white"
       />
       <button
         className="bg-green-400 text-black hover:bg-green-500"
@@ -167,7 +167,7 @@ function Filter({ setAppliedFilter }) {
         type="text"
         value={filter.country}
         onChange={(e) => setFilter({ ...filter, country: e.target.value })}
-        className="text-black"
+        className="text-black bg-white"
       />
       <label htmlFor="state">State: </label>
       <input
@@ -175,7 +175,7 @@ function Filter({ setAppliedFilter }) {
         type="text"
         value={filter.state}
         onChange={(e) => setFilter({ ...filter, state: e.target.value })}
-        className="text-black"
+        className="text-black bg-white"
       />
       <button
         className="bg-gray-400 text-black hover:bg-gray-500"
